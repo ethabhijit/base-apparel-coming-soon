@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+	--desaturated-red-color: hsl(0, 36%, 70%);
+	--soft-red-color: hsl(0, 93%, 68%);
+	--dark-grayish-red-color: hsl(0, 6%, 24%);
+}
+
+/* Main container style */
+#container {
+	background-image: url(../images/bg-pattern-desktop.svg), 
+										linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+	background-size: 63% 100%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 55% 45%;
+	grid-template-rows: 20% 80%;
+}
+
+/* Logo container style */
+#logo__container {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#logo__container #logo {
+	padding: 0 0 0 4rem;
+}
+
+/* Hero image container style */
+#hero__image__container {
+	background-image: url(../images/hero-desktop.jpg);
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: right;
+	grid-column: 2/3;
+	grid-row: 1/3;
+}
+
+/* Jumbotron */
+#jumbotron {
+}
+
+#jumbotron___title {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 4rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1rem;
+	padding: 0 0 0 4rem;
+	margin-top: 2rem;
+} 
+
+#jumbotron___title > span {
+	display: block;
+}
+
+#jumbotron___title > span:nth-of-type(1) {
+	font-weight: 300;
+	color: var(--desaturated-red-color);
+}
+
+#jubmotron__desc {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin: 2rem 0 0 4rem;
+	width: 54%;
+}
+
+/* Form Style */
+#input__group {
+	margin: 2rem 0 0 4rem;
+	position: relative;
+}
+
+#input__email {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	border: 1px solid var(--desaturated-red-color);
+	border-radius: 30px;
+	background-color: #fff;
+	padding: 1rem 2rem;
+	width: 50%;
+}
+
+#submit__btn {
+	height: 50px;
+	width: 100px;
+	border: none;
+	border-radius: 30px;
+	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+	position: absolute;
+	left: 43%;
+	cursor: pointer;
+	transition: 0.5s all;
+}
+
+#submit__btn:hover {
+	background-image: linear-gradient(135deg, hsl(0, 74%, 74%), hsl(0, 80%, 86%));
+}

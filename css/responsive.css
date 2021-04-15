@@ -1,0 +1,119 @@
+
+ /* X-Large devices (large desktops, less than 1400px) */
+@media only screen and (max-width: 1399.98px) {
+  
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (max-width: 1199.98px) {
+ 
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 991.98px) {
+  /* Main container style */
+	#container {
+		background-size: cover;
+		width: 100%;
+		height: auto;
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 300px auto;
+	}
+
+  /* Logo container style */
+	#logo__container {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	/* Hero image container style */
+	#hero__image__container {
+		background-image: url(../images/hero-mobile.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	/* Jumbotron */
+	#jumbotron {
+		grid-column: 1/2;
+		grid-row: 3/4;
+		/*display: flex;*/
+		/*flex-direction: column;
+		justify-content: center;
+		align-items: center;*/
+	}
+
+	#jumbotron___title {
+		padding: 0 0 0 0;
+		text-align: center;
+		margin-top: 2rem;
+	}
+
+	#jubmotron__desc {
+		line-height: 1.5rem;
+		text-align: center;
+		margin: auto;
+		margin-top: 2rem;
+		width: 80%;
+	}
+
+	/* Form Style */
+	#input__group {
+		margin: 2rem 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#input__email {
+		padding: 1rem 2rem;
+		/*width: 80%;*/
+	}
+
+	#submit__btn {
+		left: 67%;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (max-width: 575.98px) {
+	/* Main container style */
+	#container {
+		width: 100%;
+		height: auto;
+		background-color: lightblue;
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 300px auto;
+	}
+
+  /* Logo container style */
+	#logo__container {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	/* Hero image container style */
+	#hero__image__container {
+		grid-column: 1/2;
+		grid-row: 2/3;
+	}
+
+	/* Jumbotron */
+	#jumbotron {
+		grid-column: 1/2;
+		grid-row: 3/4;
+	}
+
+	/*Form Style */
+	#input__email {
+		/*padding: 1rem 2rem;*/
+		width: 80%;
+	}
+
+	#submit__btn {
+		left: 72%;
+	}
+}
